@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+    width: min(400px, 75vw);
+    height: min(60vh, 600px);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.card * {
+    position: absolute;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card h3 {
+    bottom: 5%;
+    width: min(400px, 75vw);
+    font-size: 1.5em;
+    padding: 0.5em 0;
+    text-indent: 1em;
+    letter-spacing: 0.05em;
+    background: linear-gradient(to right, #333e, #333d, #3332, transparent);
+    color: #fff;
+}
+
+.tinderCard_container {
+    position: fixed;
+    left: 50%;
+    top: calc(50% - min(60vh, 600px) / 2);
+    display: flex;
+    justify-content: center;
+}
+
+.swipe {
+    position: absolute;
+}
