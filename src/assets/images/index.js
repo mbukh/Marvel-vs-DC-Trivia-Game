@@ -25,6 +25,8 @@ import comicStamp10 from "./comic_stamps10.png";
 
 import restart from "./comic_stamps2.png";
 
+import arrow from "./arrow.png";
+
 const bgImages = [bg1, bg2];
 const marvel = [marvel1, marvel2, marvel3, marvel4];
 const dc = [dc1, dc2, dc3];
@@ -41,4 +43,4 @@ const comicStamps = [
     comicStamp10,
 ];
 
-export { bgImages, arrows, marvel, dc, comicStamps, restart };
+export { bgImages, arrows, marvel, dc, comicStamps, restart, arrow };

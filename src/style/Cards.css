@@ -21,6 +21,21 @@
     color: #fff;
 }
 
+.card.welcome .arrow {
+    position: relative;
+    display: inline-block;
+    height: 0.8em;
+    width: 1.5em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-inline: 0.2em;
+}
+
+.card.welcome .arrow.right {
+    transform: rotate(180deg);
+}
+
 .card * {
     position: absolute;
     -webkit-user-drag: none;

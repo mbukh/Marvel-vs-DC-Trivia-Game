@@ -1,4 +1,5 @@
 import "../style/Cards.css";
+import { arrow } from "../assets/images/";
 import { createRef, useRef, useState, useMemo, useEffect } from "react";
 // https://github.com/3DJakob/react-tinder-card-demo/blob/master/src/examples/Advanced.js
 import TinderCard from "react-tinder-card";
@@ -19,6 +20,7 @@ function Cards({
         () => [...Array(characters.length)].map((i) => createRef()),
         [characters]
     );
+    const welcomeCardRef = useRef(null);
 
     const updateCurrentIndex = (val) => {
         setCurrentIndex(val);
@@ -29,6 +31,7 @@ function Cards({
         // Skip welcome card
         if (direction === "ignore") {
             console.log("welcome card is out");
+            welcomeCardRef.isOut = true;
             return;
         }
         // set last direction
@@ -61,10 +64,30 @@ function Cards({
         }, 50);
     };
 
-    // const swiped = (id) => {};
+    // Card swiped but haven't not exited the screen
+    // const swiped = (dir, index) => {};
 
+    // New round
     useEffect(() => {
-        // Finish Game routine
+        console.log("New round. Current index:", currentIndex);
+
+        const keydownHandler = (e) => {
+            const direction =
+                e.keyCode === 37 ? "left" : e.keyCode === 39 ? "right" : false;
+            if (!direction || currentIndex < 0) return;
+            if (!welcomeCardRef.isOut) {
+                console.log(childRefs);
+                childRefs[currentIndex].current.swipe(direction);
+            }
+            // } else welcomeCardRef.current.swipe(direction);
+        };
+        document.addEventListener("keydown", keydownHandler);
+        // Remove event before next level
+        return () => document.removeEventListener("keydown", keydownHandler);
+    }, [roundCount, childRefs, currentIndex]);
+
+    // Finish Game routine
+    useEffect(() => {
         if (!finishGame) return;
         const alignCardForSummary = (card, index) => {
             const id = Number(card.className.match(/\d+/)[0]);
@@ -95,8 +118,6 @@ function Cards({
         childRefs.forEach((ref) =>
             setTimeout(async () => await ref.current.restoreCard(), 1500)
         );
-        // setFinishGame(false);
-        // setNextGame({});
     }, [finishGame, characters, childRefs, sides, answerRefs]);
 
     return (
@@ -124,6 +145,7 @@ function Cards({
 
             {roundCount === 1 && (
                 <TinderCard
+                    ref={welcomeCardRef}
                     key="welcome"
                     className="swipe welcome"
                     onSwipe={(dir) => swiped("ignore", -1)}
@@ -137,7 +159,18 @@ function Cards({
                             card is from Marvel or DC comics
                         </p>
                         <p>Don't you dare to fail!</p>
-                        <h3>Swipe to start</h3>
+                        <h3>
+                            Swipe or Press
+                            <span
+                                className="arrow left"
+                                style={{ backgroundImage: `url(${arrow})` }}
+                            ></span>
+                            <span
+                                className="arrow right"
+                                style={{ backgroundImage: `url(${arrow})` }}
+                            ></span>
+                            to start
+                        </h3>
                     </div>
                 </TinderCard>
             )}
