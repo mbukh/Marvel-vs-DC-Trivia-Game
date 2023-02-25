@@ -91,12 +91,12 @@ function Cards({
             const id = Number(card.className.match(/\d+/)[0]);
             const character = characters.find((ch) => ch.id === id);
             const randomHOffsetWithinScreen =
-                -card.offsetWidth / 3 +
-                ((window.screen.width + card.offsetWidth / 4) / 4) *
+                -card.offsetWidth / 2.5 +
+                (window.innerWidth / 4 + card.offsetWidth / 10) *
                     (1 - index / characters.length);
             const verticalOffsetWithinUI =
                 -card.offsetHeight / 3.5 +
-                ((index / 2) * card.offsetHeight) / 4;
+                ((index / 2) * card.offsetHeight) / 3.7;
             card.style = "";
             character.biography.publisher.includes(sides.right)
                 ? (card.style.left = `${randomHOffsetWithinScreen}px`)

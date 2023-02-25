@@ -134,6 +134,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
+    scale: 0.9;
     filter: drop-shadow(70px 70px 3px #000a);
     background-position: center center;
     background-repeat: no-repeat;
