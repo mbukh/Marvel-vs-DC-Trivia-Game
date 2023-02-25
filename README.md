@@ -24,13 +24,13 @@ To run the app locally, follow these steps:
 
 ## How to play
 
-1. Use a mouse or keyboard.
-2. Swipe a card to the left to choose DC for a character.
-3. Swipe to the right to select Marvel Comics.
-4. Each round consists of five cards.
-5. Points are awarded for each correct match.
-6. At the end of a round all cards are shown on their correct sides.
-7. Press WOW button to proceed to the next round.
+1. Utilize a mouse or keyboard for gameplay.
+2. Swipe the card to the left to choose DC.
+3. Swipe to the right to choose Marvel Comics.
+4. Each round comprises five cards.
+5. Earn points for every correct match.
+6. All cards will be revealed on their correct sides at the end of a round.
+7. Hit the WOW button to advance to the next round.
 
 ## Author
 
