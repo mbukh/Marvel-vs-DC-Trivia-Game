@@ -2,41 +2,27 @@
 
 # Marvel vs DC Cards
 
-A card game built with React where you have to guess whether the superhero on the card is from Marvel or DC comics.
+This is a matching game app built using React. The app displays a set of cards, each featuring a superhero or supervillain from either DC or Marvel comics. The user's task is to match characters from the same publisher by swiping left or right on the cards.
 
-## Installation
+## Getting started
 
-1. Clone the repository:
+To run the app locally, follow these steps:
 
-    ```
-    git clone https://github.com/username/marvel-vs-dc-cards.git
-    ```
+1. Clone this repository.
+2. Open the project directory in your terminal.
+3. Install the required dependencies using the command `npm install`.
+4. Start the development server using the command `npm start`.
+5. Open the app in your browser at http://localhost:3000.
 
-2. Install the dependencies:
+## How to play
 
-    ```
-    cd marvel-vs-dc-cards
-    npm install
-    ```
+1. Swipe a card to the left to choose DC for a character.
+2. Swipe right on a card to select Marvel.
+3. Each round consists of five cards.
+4. Points are awarded for each correct match.
+5. At the end of a round all cards are shown on their correct sides.
+6. Press WOW button to proceed to the next round.
 
-3. Start the development server:
+## Author
 
-    ```
-    npm start
-    ```
-
-## How to Play
-
-1. Each round, you will be shown a card with a superhero on it.
-
-2. Guess whether the superhero is from Marvel or DC comics by clicking the corresponding button.
-
-3. If you guess correctly, you will earn a point.
-
-4. The game ends after all cards have been shown. Your final score will be displayed on the screen.
-
-## Credits
-
-This game was built by [Your Name](https://github.com/your-username).
-
-The card images were obtained from [Superhero Database](https://www.superherodb.com/) and are used for educational purposes only.
+This app was developed by [MBukh.dev](https://mbukh.dev).

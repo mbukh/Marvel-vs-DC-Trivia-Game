@@ -13,9 +13,9 @@
 }
 
 .card.welcome p {
+    padding: 1em 1em 0.3em;
     position: relative;
-    padding: 1em 1em;
-    font-size: max(3.2vh, 1em);
+    font-size: min(max(3.2vh, 2vw), 1.5em);
     line-height: 1.3em;
     letter-spacing: 0.05em;
     color: #fff;

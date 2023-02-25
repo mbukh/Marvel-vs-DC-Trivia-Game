@@ -131,10 +131,10 @@ function Cards({
                     preventSwipe={[`up`, `down`]}
                 >
                     <div className="card welcome">
-                        <p>This card was placed here to welcome you</p>
+                        <p>This card is here to welcome you</p>
                         <p>
-                            Guess whether the superhero on the card is from
-                            Marvel or DC comics
+                            Guess whether the superhero or supervillain on the
+                            card is from Marvel or DC comics
                         </p>
                         <p>Don't you dare to fail!</p>
                         <h3>Swipe to start</h3>
