@@ -4,7 +4,7 @@ import { getRandomNonRepeatingNumbers } from "../utils";
 const getRandomCharacters = (number, publishers) => {
     const characters = allCharacters.filter((character) =>
         publishers.some((publisher) =>
-            character.biography.publisher.includes(publisher)
+            character.biography.publisher?.includes(publisher)
         )
     );
     const charactersId = getRandomNonRepeatingNumbers({
@@ -16,4 +16,4 @@ const getRandomCharacters = (number, publishers) => {
     return charactersArr;
 };
 
-export { getRandomCharacters, getPublishers };
+export { getRandomCharacters };

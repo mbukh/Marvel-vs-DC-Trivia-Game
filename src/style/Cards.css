@@ -36,7 +36,7 @@
     color: #fff;
 }
 
-.tinderCard_container {
+.Card_container {
     position: fixed;
     left: 50%;
     top: calc(50% - min(60vh, 600px) / 2);
@@ -46,4 +46,41 @@
 
 .swipe {
     position: absolute;
+}
+
+.swipe.true h3 {
+    background: linear-gradient(to right, #005020dd, #005020aa, transparent);
+}
+
+.swipe.false h3 {
+    background: linear-gradient(to right, #500d00dd, #500d00aa, transparent);
+}
+
+.swipe.true::after {
+    content: "CORRECT";
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    letter-spacing: 0.5em;
+    padding-block: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    background: #005020aa;
+}
+.swipe.false::after {
+    content: "WRONG";
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    letter-spacing: 0.5em;
+    padding-block: 10px;
+    font-size: 1.3em;
+    color: #fff;
+    background: #500d00cc;
 }
