@@ -2,9 +2,9 @@
 
 # Marvel vs DC Cards
 
-This is a matching game app built using React. The app displays a set of cards, each featuring a superhero or supervillain from either DC or Marvel comics. The user's task is to match characters from the same publisher by swiping left or right on the cards.
-
 [Play Demo](https://mbukh-comics-match-game.netlify.app)
+
+This is a matching game app built using React. The app displays a set of cards, each featuring a superhero or supervillain from either DC or Marvel comics. The user's task is to match characters from the same publisher by swiping left or right on the cards.
 
 ![image](./docs/screen1.jpg)
 ![image](./docs/screen2.jpg)
