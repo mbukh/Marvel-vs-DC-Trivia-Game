@@ -90,14 +90,13 @@ function Cards({
         const alignCardForSummary = (card, index) => {
             const id = Number(card.className.match(/\d+/)[0]);
             const character = characters.find((ch) => ch.id === id);
-
             const randomHOffsetWithinScreen =
-                -card.offsetWidth / 3.5 +
-                ((window.screen.width / 2 + card.offsetWidth * 2.5) / 10) *
+                -card.offsetWidth / 3 +
+                ((window.screen.width + card.offsetWidth / 4) / 4) *
                     (1 - index / characters.length);
             const verticalOffsetWithinUI =
-                -card.offsetHeight / 3 +
-                ((index / 2) * card.offsetHeight) / 3.5;
+                -card.offsetHeight / 3.5 +
+                ((index / 2) * card.offsetHeight) / 4;
             card.style = "";
             character.biography.publisher.includes(sides.right)
                 ? (card.style.left = `${randomHOffsetWithinScreen}px`)
@@ -167,7 +166,6 @@ function Cards({
                                 className="arrow right"
                                 style={{ backgroundImage: `url(${arrow})` }}
                             ></span>
-                            to start
                         </h3>
                     </div>
                 </TinderCard>

@@ -29,9 +29,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-inline: 0.2em;
+    margin-inline: 0.3em;
 }
-
+.card.welcome h3 {
+    text-align: center;
+}
 .card.welcome .arrow.right {
     transform: rotate(180deg);
 }
