@@ -8,6 +8,19 @@
     cursor: pointer;
 }
 
+.card.welcome {
+    background-color: #111d;
+}
+
+.card.welcome p {
+    position: relative;
+    padding: 1em 1em;
+    font-size: 2em;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
 .card * {
     position: absolute;
     -webkit-user-drag: none;

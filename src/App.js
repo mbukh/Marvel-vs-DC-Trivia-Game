@@ -15,6 +15,7 @@ import Cards from "./components/Cards";
 import Spinner from "./components/Spinner";
 
 function App() {
+    const [roundCount, setRoundCount] = useState(1);
     const [finishGame, setFinishGame] = useState(false);
     const [showStamp, setShowStamp] = useState(false);
     const [showRestart, setShowRestart] = useState(false);
@@ -34,6 +35,7 @@ function App() {
         setShowRestart(false);
         setIsLoading(true);
         setPoints(0);
+        setRoundCount((round) => round + 1);
     };
 
     useEffect(() => {
@@ -108,12 +110,14 @@ function App() {
                     addPoint={handleAddPoint}
                     finishGame={finishGame}
                     setFinishGame={setFinishGame}
+                    roundCount={roundCount}
                 />
             ) : (
                 <Spinner />
             )}
 
             <h2 className="user-score">
+                <div className="round">Round {roundCount}</div>
                 {points} / {characters.length}
             </h2>
 

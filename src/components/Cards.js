@@ -3,7 +3,14 @@ import { createRef, useRef, useState, useMemo, useEffect } from "react";
 // https://github.com/3DJakob/react-tinder-card-demo/blob/master/src/examples/Advanced.js
 import TinderCard from "react-tinder-card";
 
-function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
+function Cards({
+    characters,
+    sides,
+    addPoint,
+    finishGame,
+    setFinishGame,
+    roundCount,
+}) {
     const [currentIndex, setCurrentIndex] = useState(characters.length - 1);
     // deal with outOfFrameHandler closure not getting the most resent finishGame
     const currentIndexRef = useRef(currentIndex);
@@ -19,6 +26,11 @@ function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
     };
 
     const swiped = (direction, index) => {
+        // Skip welcome card
+        if (direction === "ignore") {
+            console.log("welcome card is out");
+            return;
+        }
         // set last direction
         const currentRef = childRefs[index].current;
         // Debounce multiple events at a time
@@ -52,16 +64,18 @@ function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
     // const swiped = (id) => {};
 
     useEffect(() => {
+        // Finish Game routine
         if (!finishGame) return;
         const alignCardForSummary = (card, index) => {
             const id = Number(card.className.match(/\d+/)[0]);
             const character = characters.find((ch) => ch.id === id);
+
             const randomHOffsetWithinScreen =
-                -card.offsetWidth / 4 +
-                ((window.screen.width + card.offsetWidth / 2) / 8) *
+                -card.offsetWidth / 3.5 +
+                ((window.screen.width / 2 + card.offsetWidth * 2.5) / 10) *
                     (1 - index / characters.length);
             const verticalOffsetWithinUI =
-                -card.offsetHeight / 3.5 +
+                -card.offsetHeight / 3 +
                 ((index / 2) * card.offsetHeight) / 3.5;
             card.style = "";
             character.biography.publisher.includes(sides.right)
@@ -74,7 +88,7 @@ function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
             setTimeout(() => (card.style.opacity = 1), 1000);
         };
         // Manipulation DOM styles
-        const cards = document.querySelectorAll(".swipe");
+        const cards = document.querySelectorAll(".swipe:not(.welcome)");
         cards.forEach((card, index) =>
             setTimeout(() => alignCardForSummary(card, index), 500)
         );
@@ -107,6 +121,23 @@ function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
                     </div>
                 </TinderCard>
             ))}
+
+            {roundCount === 1 && (
+                <TinderCard
+                    key="welcome"
+                    className="swipe welcome"
+                    onSwipe={(dir) => swiped("ignore", -1)}
+                    onCardLeftScreen={() => true}
+                    preventSwipe={[`up`, `down`]}
+                >
+                    <div className="card welcome">
+                        <p>This card was placed here to welcome you</p>
+                        <p>Chose the right side for every character and...</p>
+                        <p>Don't you dare to fail!</p>
+                        <h3>Swipe to start</h3>
+                    </div>
+                </TinderCard>
+            )}
         </div>
     );
 }
