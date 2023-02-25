@@ -4,6 +4,11 @@
 
 This is a matching game app built using React. The app displays a set of cards, each featuring a superhero or supervillain from either DC or Marvel comics. The user's task is to match characters from the same publisher by swiping left or right on the cards.
 
+[Play Demo](https://mbukh-comics-match-game.netlify.app)
+
+![image](./docs/screen1.jpg)
+![image](./docs/screen2.jpg)
+
 ## Getting started
 
 To run the app locally, follow these steps:
@@ -13,6 +18,15 @@ To run the app locally, follow these steps:
 3. Install the required dependencies using the command `npm install`.
 4. Start the development server using the command `npm start`.
 5. Open the app in your browser at http://localhost:3000.
+
+<div style="display:flex">
+     <div style="flex:1;margin-right:10px;border:1px solid #aaa8;padding:0px;">
+        <img src="./docs/screen3.jpeg" style="height:100%;"/>
+     </div>
+     <div style="flex:1;padding-left:10px;border:1px solid #aaa8;padding:0px;">
+        <img src="./docs/screen4.jpeg" style="height:100%;"/>
+     </div>
+</div>
 
 ## How to play
 
