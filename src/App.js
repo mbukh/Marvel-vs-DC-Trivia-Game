@@ -21,9 +21,9 @@ function App() {
     const [points, setPoints] = useState(0);
     const [characters, setCharacters] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    const [publishers, setPublishers] = useState(["DC", "Marvel"]);
-    const [sides, setSides] = useState({ left: "DC", right: "Marvel" });
-    const [cardsCount, setCardsCount] = useState(5);
+    const [publishers] = useState(["DC", "Marvel"]);
+    const [sides] = useState({ left: "DC", right: "Marvel" });
+    const [cardsCount] = useState(5);
 
     const handleAddPoint = () => {
         setPoints((prev) => (!finishGame ? prev + 1 : 0));
