@@ -132,7 +132,10 @@ function Cards({
                 >
                     <div className="card welcome">
                         <p>This card was placed here to welcome you</p>
-                        <p>Chose the right side for every character and...</p>
+                        <p>
+                            Guess whether the superhero on the card is from
+                            Marvel or DC comics
+                        </p>
                         <p>Don't you dare to fail!</p>
                         <h3>Swipe to start</h3>
                     </div>
