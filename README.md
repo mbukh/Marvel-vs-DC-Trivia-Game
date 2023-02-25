@@ -19,17 +19,18 @@ To run the app locally, follow these steps:
 4. Start the development server using the command `npm start`.
 5. Open the app in your browser at http://localhost:3000.
 
-|![iPhone screenshot 1](./docs/screen3.jpeg "title-1")|![iPhone screenshot 1](./docs/screen4.jpeg "title-2")|
 |:---:|:---:|
+|![iPhone screenshot 1](./docs/screen3.jpeg "title-1")|![iPhone screenshot 1](./docs/screen4.jpeg "title-2")|
 
 ## How to play
 
-1. Swipe a card to the left to choose DC for a character.
-2. Swipe right on a card to select Marvel.
-3. Each round consists of five cards.
-4. Points are awarded for each correct match.
-5. At the end of a round all cards are shown on their correct sides.
-6. Press WOW button to proceed to the next round.
+1. Use a mouse or keyboard.
+2. Swipe a card to the left to choose DC for a character.
+3. Swipe right on a card to select Marvel.
+4. Each round consists of five cards.
+5. Points are awarded for each correct match.
+6. At the end of a round all cards are shown on their correct sides.
+7. Press WOW button to proceed to the next round.
 
 ## Author
 
