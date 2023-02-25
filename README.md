@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d6374334-420d-40be-8e7c-caca5a5577f5/deploy-status)](https://app.netlify.com/sites/mbukh-comics-match-game/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
