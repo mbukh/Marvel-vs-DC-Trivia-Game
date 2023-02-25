@@ -19,8 +19,8 @@ To run the app locally, follow these steps:
 4. Start the development server using the command `npm start`.
 5. Open the app in your browser at http://localhost:3000.
 
-|:---:|:---:|
-|![iPhone screenshot 1](./docs/screen3.jpeg "title-1")|![iPhone screenshot 1](./docs/screen4.jpeg "title-2")|
+| ![iPhone screenshot 1](./docs/screen3.jpeg "title-1") | ![iPhone screenshot 1](./docs/screen4.jpeg "title-2") |
+| :---------------------------------------------------: | :---------------------------------------------------: |
 
 ## How to play
 
