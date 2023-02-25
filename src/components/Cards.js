@@ -75,11 +75,9 @@ function Cards({
             const direction =
                 e.keyCode === 37 ? "left" : e.keyCode === 39 ? "right" : false;
             if (!direction || currentIndex < 0) return;
-            if (!welcomeCardRef.isOut) {
-                console.log(childRefs);
-                childRefs[currentIndex].current.swipe(direction);
-            }
-            // } else welcomeCardRef.current.swipe(direction);
+            if (welcomeCardRef.current && !welcomeCardRef.isOut)
+                welcomeCardRef.current.swipe(direction);
+            else childRefs[currentIndex].current.swipe(direction);
         };
         document.addEventListener("keydown", keydownHandler);
         // Remove event before next level
