@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "./static/css/main.029b211f.css",
+    "main.js": "./static/js/main.4d06f9ac.js",
+    "static/media/comic_stamps2.png": "./static/media/comic_stamps2.f660e95024bbf7feab0f.png",
+    "static/media/comic_stamps7.png": "./static/media/comic_stamps7.3eaae2a97e158526b628.png",
+    "static/media/comic_stamps8.png": "./static/media/comic_stamps8.52192aadf6bf0f63ae16.png",
+    "static/media/comic_stamps10.png": "./static/media/comic_stamps10.6b55cefbef8b5d2f1f53.png",
+    "static/media/comic_stamps5.png": "./static/media/comic_stamps5.d4014eb6620746660b85.png",
+    "static/media/comic_stamps9.png": "./static/media/comic_stamps9.730f4f35f5ff9a2c9ffa.png",
+    "static/media/comic_stamps1.png": "./static/media/comic_stamps1.09336d020aeb1309c119.png",
+    "static/media/comic_stamps6.png": "./static/media/comic_stamps6.7dc224c478a10433980a.png",
+    "static/media/bg2.jpg": "./static/media/bg2.3b11bbe158b2a6430ee1.jpg",
+    "static/media/bg1.jpg": "./static/media/bg1.f917df6e138178469619.jpg",
+    "static/media/marvel3.png": "./static/media/marvel3.2b4b791a8450c07eccc7.png",
+    "static/media/marvel2.png": "./static/media/marvel2.f704e4d8d19a2b33aff1.png",
+    "static/media/dc3.png": "./static/media/dc3.efcbd93fb851130471a7.png",
+    "static/media/marvel4.png": "./static/media/marvel4.4a9ed9a6898336e1533f.png",
+    "static/media/dc2.png": "./static/media/dc2.2f8e4ea7a1ee9f70f0c9.png",
+    "static/media/arrows.png": "./static/media/arrows.f3a9f8ecf05151268f9b.png",
+    "static/media/dc1.png": "./static/media/dc1.78e81cf3d95b2e82494d.png",
+    "static/media/marvel1.png": "./static/media/marvel1.781416a5df9b89e0d1f4.png",
+    "index.html": "./index.html",
+    "main.029b211f.css.map": "./static/css/main.029b211f.css.map",
+    "main.4d06f9ac.js.map": "./static/js/main.4d06f9ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.029b211f.css",
+    "static/js/main.4d06f9ac.js"
+  ]
+}
