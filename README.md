@@ -26,7 +26,7 @@ To run the app locally, follow these steps:
 
 1. Use a mouse or keyboard.
 2. Swipe a card to the left to choose DC for a character.
-3. Swipe right on a card to select Marvel.
+3. Swipe to the right to select Marvel Comics.
 4. Each round consists of five cards.
 5. Points are awarded for each correct match.
 6. At the end of a round all cards are shown on their correct sides.
