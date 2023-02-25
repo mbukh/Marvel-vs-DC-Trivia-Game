@@ -1,8 +1,7 @@
 import "../style/Cards.css";
 import { createRef, useRef, useState, useMemo, useEffect } from "react";
-import TinderCard from "react-tinder-card";
-
 // https://github.com/3DJakob/react-tinder-card-demo/blob/master/src/examples/Advanced.js
+import TinderCard from "react-tinder-card";
 
 function Cards({ characters, sides, addPoint, finishGame, setFinishGame }) {
     const [currentIndex, setCurrentIndex] = useState(characters.length - 1);
