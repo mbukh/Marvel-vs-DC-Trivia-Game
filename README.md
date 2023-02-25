@@ -19,7 +19,7 @@ To run the app locally, follow these steps:
 4. Start the development server using the command `npm start`.
 5. Open the app in your browser at http://localhost:3000.
 
-<div style="display:flex">
+<div style="display:flex;width:99%;">
      <div style="flex:1;margin-right:10px;border:1px solid #aaa8;padding:0px;">
         <img src="./docs/screen3.jpeg" style="height:100%;"/>
      </div>
