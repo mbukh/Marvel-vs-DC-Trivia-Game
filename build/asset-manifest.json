@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.029b211f.css",
-    "main.js": "./static/js/main.4d06f9ac.js",
+    "main.css": "./static/css/main.4b583c3f.css",
+    "main.js": "./static/js/main.0222cc6c.js",
     "static/media/comic_stamps2.png": "./static/media/comic_stamps2.f660e95024bbf7feab0f.png",
     "static/media/comic_stamps7.png": "./static/media/comic_stamps7.3eaae2a97e158526b628.png",
     "static/media/comic_stamps8.png": "./static/media/comic_stamps8.52192aadf6bf0f63ae16.png",
@@ -21,11 +21,11 @@
     "static/media/dc1.png": "./static/media/dc1.78e81cf3d95b2e82494d.png",
     "static/media/marvel1.png": "./static/media/marvel1.781416a5df9b89e0d1f4.png",
     "index.html": "./index.html",
-    "main.029b211f.css.map": "./static/css/main.029b211f.css.map",
-    "main.4d06f9ac.js.map": "./static/js/main.4d06f9ac.js.map"
+    "main.4b583c3f.css.map": "./static/css/main.4b583c3f.css.map",
+    "main.0222cc6c.js.map": "./static/js/main.0222cc6c.js.map"
   },
   "entrypoints": [
-    "static/css/main.029b211f.css",
-    "static/js/main.4d06f9ac.js"
+    "static/css/main.4b583c3f.css",
+    "static/js/main.0222cc6c.js"
   ]
 }

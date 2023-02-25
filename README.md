@@ -1,72 +1,42 @@
-# Getting Started with Create React App
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d6374334-420d-40be-8e7c-caca5a5577f5/deploy-status)](https://app.netlify.com/sites/mbukh-comics-match-game/deploys)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Marvel vs DC Cards
 
-## Available Scripts
+A card game built with React where you have to guess whether the superhero on the card is from Marvel or DC comics.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+1. Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ```
+    git clone https://github.com/username/marvel-vs-dc-cards.git
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Install the dependencies:
 
-### `npm test`
+    ```
+    cd marvel-vs-dc-cards
+    npm install
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server:
 
-### `npm run build`
+    ```
+    npm start
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to Play
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Each round, you will be shown a card with a superhero on it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Guess whether the superhero is from Marvel or DC comics by clicking the corresponding button.
 
-### `npm run eject`
+3. If you guess correctly, you will earn a point.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. The game ends after all cards have been shown. Your final score will be displayed on the screen.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credits
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This game was built by [Your Name](https://github.com/your-username).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The card images were obtained from [Superhero Database](https://www.superherodb.com/) and are used for educational purposes only.
