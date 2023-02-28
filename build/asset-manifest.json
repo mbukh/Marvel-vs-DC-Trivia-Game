@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.86c92cb7.css",
-    "main.js": "./static/js/main.2ab12612.js",
+    "main.js": "./static/js/main.bdcf8f1f.js",
     "static/media/comic_stamps2.png": "./static/media/comic_stamps2.f660e95024bbf7feab0f.png",
     "static/media/comic_stamps7.png": "./static/media/comic_stamps7.3eaae2a97e158526b628.png",
     "static/media/comic_stamps8.png": "./static/media/comic_stamps8.52192aadf6bf0f63ae16.png",
@@ -23,10 +23,10 @@
     "static/media/marvel1.png": "./static/media/marvel1.781416a5df9b89e0d1f4.png",
     "index.html": "./index.html",
     "main.86c92cb7.css.map": "./static/css/main.86c92cb7.css.map",
-    "main.2ab12612.js.map": "./static/js/main.2ab12612.js.map"
+    "main.bdcf8f1f.js.map": "./static/js/main.bdcf8f1f.js.map"
   },
   "entrypoints": [
     "static/css/main.86c92cb7.css",
-    "static/js/main.2ab12612.js"
+    "static/js/main.bdcf8f1f.js"
   ]
 }
