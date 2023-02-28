@@ -126,7 +126,7 @@ function Cards({
                     className={`swipe ch${character.id}`}
                     onSwipe={(dir) => swiped(dir, index)}
                     onCardLeftScreen={(dir) => outOfFrame(dir, index)}
-                    flickOnSwipe={!finishGame}
+                    flickOnSwipe={!finishGame && index === currentIndex}
                     preventSwipe={[`up`, `down`]}
                 >
                     <div
